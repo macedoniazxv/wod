@@ -1,22 +1,9 @@
---[[
---
-    Рдру
-Жизнецвет фокус
-Жизнецвет - танк1/танк2
-Буйный рост 3+ цели -90%
-Сотворение 4+ цели с омоложением -85%
-Быстрое восстановление+клиркаст lowest
-Омоложение танк
-Омоложение lowest
-Омоложение lowestagro
-Быстрое восстановление lowest
-Омоложение спам
---
-    Хприст
-    Мана эконом
-Флешка >2
-Цох
-Пох
-Мендинг
-Ренью
---
+local drainedonstacks = 0
+local second = 20
+for i=1, second do
+  local st = i
+  local calculate = ((-4000)/-500)+((st-1)*0.55)
+  drainedonstacks = drainedonstacks + calculate
+  print('DRAIN ON '..st..' SECOND:',calculate)
+end
+print('TOTAL DRAINED '..drainedonstacks..' INSANITY FOR '..second..'.sec')
